@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+
+<script>
+
+  let prenom = window.prompt("Quel est votre prénom ?");
+
+ 
+  let age = window.prompt("Quel est votre âge ?");
+
+  
+  age = Number(age);
+
+ 
+  let anneeNaissance = 2025 - age;
+
+  window.alert("Bonjour " + prenom + " ! Vous êtes né(e) vers " + anneeNaissance + ".");
+
+  let afficherConsole = window.confirm("Afficher dans la console ?");
+
+  if (afficherConsole === true) {
+    console.log("Prénom :", prenom);
+    console.log("Âge :", age);
+    console.log("Année de naissance :", anneeNaissance);
+  }
+</script>
+
+</body>
+</html>
